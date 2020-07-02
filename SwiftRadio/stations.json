@@ -1,0 +1,12 @@
+{
+    "station":
+    [
+     {
+     "name": "Radio One Mallorca",
+     "streamURL": "http://80.32.132.126:8000",
+     "imageURL": "http://r1m.devmysite.uk/wp-content/uploads/2020/01/Radio1-logo_White.png",
+     "desc": "93.8 and 102FM",
+     "longDesc": "Radio One Mallorca 93.8 & 102FM."
+     }
+    ]
+}
