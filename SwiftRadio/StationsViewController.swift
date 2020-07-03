@@ -9,6 +9,7 @@
 import UIKit
 import MediaPlayer
 import AVFoundation
+import OneSignal
 
 class StationsViewController: UIViewController {
     
@@ -51,9 +52,45 @@ class StationsViewController: UIViewController {
     //*****************************************************************
     // MARK: - ViewDidLoad
     //*****************************************************************
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
+        if UserDefaults.standard.bool(forKey: "Walkthrough") {
+            print("already shown")
+            // Terms have been accepted, proceed as normal
+        } else {
+            var userIdTextField: UITextField?
+            // Declare Alert message
+             let dialogMessage = UIAlertController(title: "Welcome", message: "Looks like you're new here, please enter your name. This will help us personalise the notifications that we send you.", preferredStyle: .alert)
+             // Create OK button with action handler
+             let ok = UIAlertAction(title: "OK", style: .default, handler: { (action) -> Void in
+                 print("Ok button tapped")
+                 if let userInput = userIdTextField!.text {
+                     print("User entered \(userInput)")
+                    OneSignal.sendTag("Name", value: userInput)
+                 }
+             })
+             
+             // Create Cancel button with action handlder
+             let cancel = UIAlertAction(title: "Cancel", style: .cancel) { (action) -> Void in
+                 print("Cancel button tapped")
+             }
+             //Add OK and Cancel button to dialog message
+             dialogMessage.addAction(ok)
+             dialogMessage.addAction(cancel)
+             
+             // Add Input TextField to dialog message
+             dialogMessage.addTextField { (textField) -> Void in
+                 
+                 userIdTextField = textField
+                 userIdTextField?.placeholder = "Your Name"
+             }
+             
+             // Present dialog message to user
+             self.present(dialogMessage, animated: true, completion: nil)
+
+            UserDefaults.standard.set(true, forKey: "Walkthrough")
+        }
         
         // Register 'Nothing Found' cell xib
         let cellNib = UINib(nibName: "NothingFoundCell", bundle: nil)

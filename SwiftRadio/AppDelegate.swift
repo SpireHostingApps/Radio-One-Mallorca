@@ -15,6 +15,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     weak var stationsViewController: StationsViewController?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        if !UserDefaults.standard.bool(forKey: "Walkthrough") {
+                   UserDefaults.standard.set(false, forKey: "Walkthrough")
+               }
         //Remove this method to stop OneSignal Debugging
           OneSignal.setLogLevel(.LL_VERBOSE, visualLevel: .LL_NONE)
 
@@ -22,7 +25,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
           let onesignalInitSettings = [kOSSettingsKeyAutoPrompt: false, kOSSettingsKeyInAppLaunchURL: false]
           
           // Replace 'YOUR_ONESIGNAL_APP_ID' with your OneSignal App ID.
-          OneSignal.initWithLaunchOptions(launchOptions,
+        OneSignal.setLocationShared(true);
+        OneSignal.initWithLaunchOptions(launchOptions,
             appId: "77a9dbe6-221b-4909-8790-573e4e5aad56",
             handleNotificationAction: nil,
             settings: onesignalInitSettings)
