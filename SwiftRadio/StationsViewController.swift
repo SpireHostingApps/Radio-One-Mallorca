@@ -55,7 +55,7 @@ class StationsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        if UserDefaults.standard.bool(forKey: "Walkthrough") {
+        if UserDefaults.standard.bool(forKey: "Name") {
             print("already shown")
             // Terms have been accepted, proceed as normal
         } else {

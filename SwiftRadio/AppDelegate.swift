@@ -15,8 +15,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     weak var stationsViewController: StationsViewController?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        if !UserDefaults.standard.bool(forKey: "Walkthrough") {
-                   UserDefaults.standard.set(false, forKey: "Walkthrough")
+        if !UserDefaults.standard.bool(forKey: "Name") {
+                   UserDefaults.standard.set(false, forKey: "Name")
                }
         //Remove this method to stop OneSignal Debugging
           OneSignal.setLogLevel(.LL_VERBOSE, visualLevel: .LL_NONE)
