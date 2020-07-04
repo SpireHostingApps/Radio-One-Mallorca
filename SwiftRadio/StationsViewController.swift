@@ -55,6 +55,7 @@ class StationsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         if UserDefaults.standard.bool(forKey: "Name") {
             print("already shown")
             // Terms have been accepted, proceed as normal
@@ -89,9 +90,9 @@ class StationsViewController: UIViewController {
              // Present dialog message to user
              self.present(dialogMessage, animated: true, completion: nil)
 
-            UserDefaults.standard.set(true, forKey: "Walkthrough")
+            UserDefaults.standard.set(true, forKey: "Name")
         }
-        
+        OneSignal.promptLocation()
         // Register 'Nothing Found' cell xib
         let cellNib = UINib(nibName: "NothingFoundCell", bundle: nil)
         tableView.register(cellNib, forCellReuseIdentifier: "NothingFound")
