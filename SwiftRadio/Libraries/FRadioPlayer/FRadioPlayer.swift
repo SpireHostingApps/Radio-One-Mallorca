@@ -211,11 +211,11 @@ open class FRadioPlayer: NSObject {
         }
     }
     
-    /// Reachability for network interruption handling
-    private let reachability = Reachability()!
+    /// Have we over-buffered and are now hung?
+       private var bufferedInExcess: Bool = false
     
-    /// Current network connectivity
-    private var isConnected = false
+    /// Time for over-buffering
+    private var timer: Timer = Timer()
     
     // MARK: - Initialization
     
@@ -231,11 +231,6 @@ open class FRadioPlayer: NSObject {
         
         // Check for headphones
         checkHeadphonesConnection(outputs: AVAudioSession.sharedInstance().currentRoute.outputs)
-        
-        // Reachability config
-        try? reachability.startNotifier()
-        NotificationCenter.default.addObserver(self, selector: #selector(reachabilityChanged(note:)), name: .reachabilityChanged, object: reachability)
-        isConnected = reachability.connection != .none
     }
     
     // MARK: - Control Methods
@@ -245,13 +240,27 @@ open class FRadioPlayer: NSObject {
      
      */
     open func play() {
+        timer.invalidate()
         guard let player = player else { return }
         if player.currentItem == nil, playerItem != nil {
             player.replaceCurrentItem(with: playerItem)
         }
         
-        player.play()
+        startPlaying(withNewPlayer: bufferedInExcess)
         playbackState = .playing
+    }
+    
+    func startPlaying(withNewPlayer: Bool = false) {
+        if withNewPlayer {
+            print("restart player")
+            bufferedInExcess = false
+            radioURLDidChange(with: radioURL)
+
+        } else {
+            guard let player = player else { return }
+            print("resume player")
+            player.play()
+        }
     }
     
     /**
@@ -262,6 +271,25 @@ open class FRadioPlayer: NSObject {
         guard let player = player else { return }
         player.pause()
         playbackState = .paused
+          
+        // If the player is paused for more than ~50 sec, it goes into a
+        // state where it can't be unpaused and must be restarted. Start
+        // a timer to detect this.
+        startCountingPlayerBufferingSeconds()
+        bufferedInExcess = false
+        }
+
+        func startCountingPlayerBufferingSeconds(interval: Double = 50) {
+            timer = Timer.scheduledTimer(timeInterval: interval, target: self, selector: #selector(self.setExcessiveBufferedFlag), userInfo: nil, repeats: false)
+        }
+
+        @objc func setExcessiveBufferedFlag() {
+            print("Maximum player buffering interval reached.")
+            bufferedInExcess = true
+        }
+
+        func stopCountingPlayerBufferingSeconds() {
+            timer.invalidate()
     }
     
     /**
@@ -393,11 +421,6 @@ open class FRadioPlayer: NSObject {
         })
     }
 
-    private func reloadItem() {
-        player?.replaceCurrentItem(with: nil)
-        player?.replaceCurrentItem(with: playerItem)
-    }
-    
     private func resetPlayer() {
         stop()
         playerItem = nil
@@ -414,6 +437,7 @@ open class FRadioPlayer: NSObject {
     
     private func setupNotifications() {
         let notificationCenter = NotificationCenter.default
+        notificationCenter.addObserver(self, selector: #selector(playerItemFailedToPlayToEndTime), name: .AVPlayerItemFailedToPlayToEndTime, object: nil)
         notificationCenter.addObserver(self, selector: #selector(handleInterruption), name: AVAudioSession.interruptionNotification, object: nil)
         notificationCenter.addObserver(self, selector: #selector(handleRouteChange), name: AVAudioSession.routeChangeNotification, object: nil)
     }
@@ -439,32 +463,10 @@ open class FRadioPlayer: NSObject {
         }
     }
     
-    @objc func reachabilityChanged(note: Notification) {
-        
-        guard let reachability = note.object as? Reachability else { return }
-        
-        // Check if the internet connection was lost
-        if reachability.connection != .none, !isConnected {
-            checkNetworkInterruption()
-        }
-        
-        isConnected = reachability.connection != .none
-    }
-    
-    // Check if the playback could keep up after a network interruption
-    private func checkNetworkInterruption() {
-        guard
-            let item = playerItem,
-            !item.isPlaybackLikelyToKeepUp,
-            reachability.connection != .none else { return }
-        
-        player?.pause()
-        
-        // Wait 1 sec to recheck and make sure the reload is needed
-        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1) {
-            if !item.isPlaybackLikelyToKeepUp { self.reloadItem() }
-            self.isPlaying ? self.player?.play() : self.player?.pause()
-        }
+    @objc private func playerItemFailedToPlayToEndTime(notification: Notification) {
+        // Put station into stopped state. It would be nice to spin off a thread to
+        // keep trying to reconnect for a while.
+        NSLog("connection dropped")
     }
     
     // MARK: - Responding to Route Changes
@@ -512,10 +514,7 @@ open class FRadioPlayer: NSObject {
                 
             case "playbackBufferEmpty":
                 
-                if item.isPlaybackBufferEmpty {
-                    self.state = .loading
-                    self.checkNetworkInterruption()
-                }
+                if item.isPlaybackBufferEmpty { self.state = .loading }
                 
             case "playbackLikelyToKeepUp":
                 
