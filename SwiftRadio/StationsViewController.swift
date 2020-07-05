@@ -69,6 +69,7 @@ class StationsViewController: UIViewController {
                  if let userInput = userIdTextField!.text {
                      print("User entered \(userInput)")
                     OneSignal.sendTag("Name", value: userInput)
+                    OneSignal.promptLocation()
                  }
              })
              
@@ -91,8 +92,9 @@ class StationsViewController: UIViewController {
              self.present(dialogMessage, animated: true, completion: nil)
 
             UserDefaults.standard.set(true, forKey: "Name")
+            
         }
-        OneSignal.promptLocation()
+        
         // Register 'Nothing Found' cell xib
         let cellNib = UINib(nibName: "NothingFoundCell", bundle: nil)
         tableView.register(cellNib, forCellReuseIdentifier: "NothingFound")

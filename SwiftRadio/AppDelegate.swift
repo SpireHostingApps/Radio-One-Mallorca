@@ -25,7 +25,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
           let onesignalInitSettings = [kOSSettingsKeyAutoPrompt: false, kOSSettingsKeyInAppLaunchURL: false]
           
           // Replace 'YOUR_ONESIGNAL_APP_ID' with your OneSignal App ID.
-        OneSignal.setLocationShared(true);
+        OneSignal.setLocationShared(false);
         OneSignal.initWithLaunchOptions(launchOptions,
             appId: "77a9dbe6-221b-4909-8790-573e4e5aad56",
             handleNotificationAction: nil,

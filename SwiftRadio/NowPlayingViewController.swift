@@ -10,6 +10,7 @@ import UIKit
 import MediaPlayer
 import AVKit
 import WebKit
+import OneSignal
 //*****************************************************************
 // NowPlayingViewControllerDelegate
 //*****************************************************************
@@ -60,6 +61,7 @@ class NowPlayingViewController: UIViewController, WKUIDelegate {
         self.view.addSubview(webView)
         let url = URL(string: "https://r1m.devmysite.uk/ads.php")
         webView.load(URLRequest(url: url!))
+        
         // Create Now Playing BarItem
         createNowPlayingAnimation()
         

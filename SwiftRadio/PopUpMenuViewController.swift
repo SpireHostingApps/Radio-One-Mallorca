@@ -47,7 +47,7 @@ class PopUpMenuViewController: UIViewController {
    
     @IBAction func websiteButtonPressed(_ sender: UIButton) {
         // Use your own website URL here
-        guard let url = URL(string: "https://r1m.devmysite.uk") else { return }
+        guard let url = URL(string: "http://radioonemallorca.com") else { return }
         UIApplication.shared.open(url, options: [:], completionHandler: nil)
     }
     

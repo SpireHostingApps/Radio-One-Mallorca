@@ -490,12 +490,12 @@
 					};
 					8C79A23924AFB0A900B3DD1F = {
 						CreatedOnToolsVersion = 11.5;
-						DevelopmentTeam = X8Y7SJRXKF;
+						DevelopmentTeam = 7V5X5777D7;
 						ProvisioningStyle = Automatic;
 					};
 					9409E1151ABF6FEA00312E2B = {
 						CreatedOnToolsVersion = 6.2;
-						DevelopmentTeam = X8Y7SJRXKF;
+						DevelopmentTeam = 7V5X5777D7;
 						LastSwiftMigration = 1020;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
@@ -758,17 +758,17 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 11;
+				CURRENT_PROJECT_VERSION = 5.57.13;
 				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEVELOPMENT_TEAM = X8Y7SJRXKF;
+				DEVELOPMENT_TEAM = 7V5X5777D7;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = OneSignalNotificationServiceExtension/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				MARKETING_VERSION = 1.0.5;
+				MARKETING_VERSION = 5.57.13;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = uk.devmysite.r1mtest.OneSignalNotificationServiceExtension;
+				PRODUCT_BUNDLE_IDENTIFIER = hr.apps.149032513.OneSignalNotificationServiceExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
@@ -790,16 +790,16 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 11;
+				CURRENT_PROJECT_VERSION = 5.57.13;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = X8Y7SJRXKF;
+				DEVELOPMENT_TEAM = 7V5X5777D7;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = OneSignalNotificationServiceExtension/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				MARKETING_VERSION = 1.0.5;
+				MARKETING_VERSION = 5.57.13;
 				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = uk.devmysite.r1mtest.OneSignalNotificationServiceExtension;
+				PRODUCT_BUNDLE_IDENTIFIER = hr.apps.149032513.OneSignalNotificationServiceExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -919,9 +919,9 @@
 				CODE_SIGN_ENTITLEMENTS = "SwiftRadio/Radio One Mallorca.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 11;
+				CURRENT_PROJECT_VERSION = 5.57.13;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = X8Y7SJRXKF;
+				DEVELOPMENT_TEAM = 7V5X5777D7;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/SwiftRadio",
@@ -929,8 +929,8 @@
 				INFOPLIST_FILE = SwiftRadio/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				MARKETING_VERSION = 1.0.5;
-				PRODUCT_BUNDLE_IDENTIFIER = uk.devmysite.r1mtest;
+				MARKETING_VERSION = 5.57.13;
+				PRODUCT_BUNDLE_IDENTIFIER = hr.apps.149032513;
 				PRODUCT_NAME = "Radio One Mallorca";
 				PROVISIONING_PROFILE = "";
 				SWIFT_INSTALL_OBJC_HEADER = NO;
@@ -948,9 +948,9 @@
 				CODE_SIGN_ENTITLEMENTS = "SwiftRadio/Radio One Mallorca.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 11;
+				CURRENT_PROJECT_VERSION = 5.57.13;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = X8Y7SJRXKF;
+				DEVELOPMENT_TEAM = 7V5X5777D7;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/SwiftRadio",
@@ -958,8 +958,8 @@
 				INFOPLIST_FILE = SwiftRadio/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				MARKETING_VERSION = 1.0.5;
-				PRODUCT_BUNDLE_IDENTIFIER = uk.devmysite.r1mtest;
+				MARKETING_VERSION = 5.57.13;
+				PRODUCT_BUNDLE_IDENTIFIER = hr.apps.149032513;
 				PRODUCT_NAME = "Radio One Mallorca";
 				PROVISIONING_PROFILE = "";
 				SWIFT_INSTALL_OBJC_HEADER = NO;
