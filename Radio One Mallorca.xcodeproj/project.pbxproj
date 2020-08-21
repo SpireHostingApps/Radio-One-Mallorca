@@ -148,7 +148,7 @@
 		8C79A23C24AFB0AA00B3DD1F /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
 		8C79A23E24AFB0AA00B3DD1F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8C79A24624AFB2C200B3DD1F /* Radio One Mallorca.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Radio One Mallorca.entitlements"; sourceTree = "<group>"; };
-		9409E1161ABF6FEA00312E2B /* Radio One Mallorca.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Radio One Mallorca.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9409E1161ABF6FEA00312E2B /* M4D Radio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "M4D Radio.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9409E11A1ABF6FEA00312E2B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9409E11B1ABF6FEA00312E2B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9409E1251ABF6FEA00312E2B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -283,7 +283,7 @@
 		9409E1171ABF6FEA00312E2B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9409E1161ABF6FEA00312E2B /* Radio One Mallorca.app */,
+				9409E1161ABF6FEA00312E2B /* M4D Radio.app */,
 				2C5545BA1C1124DE00728469 /* SwiftRadioUITests.xctest */,
 				8C79A23A24AFB0A900B3DD1F /* OneSignalNotificationServiceExtension.appex */,
 			);
@@ -469,7 +469,7 @@
 			);
 			name = SwiftRadio;
 			productName = RadioPro;
-			productReference = 9409E1161ABF6FEA00312E2B /* Radio One Mallorca.app */;
+			productReference = 9409E1161ABF6FEA00312E2B /* M4D Radio.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -490,12 +490,12 @@
 					};
 					8C79A23924AFB0A900B3DD1F = {
 						CreatedOnToolsVersion = 11.5;
-						DevelopmentTeam = 7V5X5777D7;
+						DevelopmentTeam = X8Y7SJRXKF;
 						ProvisioningStyle = Automatic;
 					};
 					9409E1151ABF6FEA00312E2B = {
 						CreatedOnToolsVersion = 6.2;
-						DevelopmentTeam = 7V5X5777D7;
+						DevelopmentTeam = X8Y7SJRXKF;
 						LastSwiftMigration = 1020;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
@@ -758,17 +758,17 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 5.57.13;
+				CURRENT_PROJECT_VERSION = 1.0;
 				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEVELOPMENT_TEAM = 7V5X5777D7;
+				DEVELOPMENT_TEAM = X8Y7SJRXKF;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = OneSignalNotificationServiceExtension/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				MARKETING_VERSION = 5.57.13;
+				MARKETING_VERSION = 1.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = hr.apps.149032513.OneSignalNotificationServiceExtension;
+				PRODUCT_BUNDLE_IDENTIFIER = co.uk.spirehosting.M4D.OneSignalNotificationServiceExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
@@ -790,16 +790,16 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 5.57.13;
+				CURRENT_PROJECT_VERSION = 1.0;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = 7V5X5777D7;
+				DEVELOPMENT_TEAM = X8Y7SJRXKF;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = OneSignalNotificationServiceExtension/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				MARKETING_VERSION = 5.57.13;
+				MARKETING_VERSION = 1.0;
 				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = hr.apps.149032513.OneSignalNotificationServiceExtension;
+				PRODUCT_BUNDLE_IDENTIFIER = co.uk.spirehosting.M4D.OneSignalNotificationServiceExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -919,9 +919,9 @@
 				CODE_SIGN_ENTITLEMENTS = "SwiftRadio/Radio One Mallorca.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 5.57.13;
+				CURRENT_PROJECT_VERSION = 1.0;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 7V5X5777D7;
+				DEVELOPMENT_TEAM = X8Y7SJRXKF;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/SwiftRadio",
@@ -929,9 +929,9 @@
 				INFOPLIST_FILE = SwiftRadio/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				MARKETING_VERSION = 5.57.13;
-				PRODUCT_BUNDLE_IDENTIFIER = hr.apps.149032513;
-				PRODUCT_NAME = "Radio One Mallorca";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = co.uk.spirehosting.M4D;
+				PRODUCT_NAME = "M4D Radio";
 				PROVISIONING_PROFILE = "";
 				SWIFT_INSTALL_OBJC_HEADER = NO;
 				SWIFT_VERSION = 5.0;
@@ -948,9 +948,9 @@
 				CODE_SIGN_ENTITLEMENTS = "SwiftRadio/Radio One Mallorca.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 5.57.13;
+				CURRENT_PROJECT_VERSION = 1.0;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 7V5X5777D7;
+				DEVELOPMENT_TEAM = X8Y7SJRXKF;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/SwiftRadio",
@@ -958,9 +958,9 @@
 				INFOPLIST_FILE = SwiftRadio/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				MARKETING_VERSION = 5.57.13;
-				PRODUCT_BUNDLE_IDENTIFIER = hr.apps.149032513;
-				PRODUCT_NAME = "Radio One Mallorca";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = co.uk.spirehosting.M4D;
+				PRODUCT_NAME = "M4D Radio";
 				PROVISIONING_PROFILE = "";
 				SWIFT_INSTALL_OBJC_HEADER = NO;
 				SWIFT_VERSION = 5.0;

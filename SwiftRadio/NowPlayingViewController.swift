@@ -57,10 +57,6 @@ class NowPlayingViewController: UIViewController, WKUIDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let webView = WKWebView(frame: CGRect(x: 0, y: 0, width: self.view.frame.size.width, height: 400))
-        self.view.addSubview(webView)
-        let url = URL(string: "https://r1m.devmysite.uk/ads.php")
-        webView.load(URLRequest(url: url!))
         
         // Create Now Playing BarItem
         createNowPlayingAnimation()

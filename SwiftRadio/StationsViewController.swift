@@ -135,7 +135,7 @@ class StationsViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        title = "Radio One Mallorca"
+        title = "M4D Radio"
     }
 
     //*****************************************************************

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="kdl-ej-Zz5">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="kdl-ej-Zz5">
     <device id="retina5_5" orientation="portrait" appearance="dark"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -11,40 +11,20 @@
         <!--Swift Radio-->
         <scene sceneID="7ik-k3-I0U">
             <objects>
-                <viewController id="enP-TM-Wa7" customClass="StationsViewController" customModule="Radio_One_Mallorca" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="enP-TM-Wa7" customClass="StationsViewController" customModule="M4D_Radio" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="OvF-E7-hdu">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="g23-m5-5pm">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="g23-m5-5pm">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                             </imageView>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="dhg-xW-Q3M">
-                                <rect key="frame" x="0.0" y="44" width="414" height="648"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="dhg-xW-Q3M">
+                                <rect key="frame" x="0.0" y="44" width="414" height="649"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <textView key="tableFooterView" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" id="hNi-Hf-wqZ">
-                                    <rect key="frame" x="0.0" y="146" width="414" height="547"/>
-                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    <string key="text"> 
-
-Click above to listen!
-
-
-Welcome to Radio One Mallorca.
-
-
-Mallorca's hottest radio station broadcasting 24 hours a day with the latest hits, all of the classics and live programs.
-
-
-If you need to get in touch, you can call the studio on +34 649 77 33 53 or email tony@radioonemallorca.com</string>
-                                    <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                                    <fontDescription key="fontDescription" type="system" pointSize="23"/>
-                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                    <dataDetectorType key="dataDetectorTypes" phoneNumber="YES"/>
-                                </textView>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="StationCell" rowHeight="90" id="hMr-La-1Ga" customClass="StationTableViewCell" customModule="Radio_One_Mallorca" customModuleProvider="target">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="StationCell" rowHeight="90" id="hMr-La-1Ga" customClass="StationTableViewCell" customModule="M4D_Radio" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="90"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="hMr-La-1Ga" id="NhW-Qy-GCO">
@@ -172,13 +152,15 @@ If you need to get in touch, you can call the studio on +34 649 77 33 53 or emai
         <!--Menu View Controller-->
         <scene sceneID="4lL-TA-52h">
             <objects>
-                <viewController id="61j-j7-6ve" userLabel="Menu View Controller" customClass="PopUpMenuViewController" customModule="Radio_One_Mallorca" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="61j-j7-6ve" userLabel="Menu View Controller" customClass="PopUpMenuViewController" customModule="M4D_Radio" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="OfZ-BE-wMy">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="GpH-v2-Q95" userLabel="Background Image View">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="GpH-v2-Q95" userLabel="Background Image View">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="tintColor" systemColor="systemGroupedBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K6v-dQ-Ces" userLabel="Pop-up View">
                                 <rect key="frame" x="82" y="255" width="250" height="206"/>
@@ -196,22 +178,12 @@ If you need to get in touch, you can call the studio on +34 649 77 33 53 or emai
                                         </connections>
                                     </button>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="7mN-C5-TQp">
-                                        <rect key="frame" x="39" y="50" width="172" height="142"/>
+                                        <rect key="frame" x="58.333333333333343" y="107.33333333333331" width="133.66666666666666" height="84.666666666666686"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="swift-radio-black" translatesAutoresizingMaskIntoConstraints="NO" id="6p5-La-eLs" customClass="SpringImageView" customModule="Radio_One_Mallorca" customModuleProvider="target">
-                                                <rect key="frame" x="26" y="0.0" width="120" height="47.333333333333336"/>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="YES"/>
-                                                    <userDefinedRuntimeAttribute type="string" keyPath="animation" value="zoomIn"/>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="delay">
-                                                        <real key="value" value="0.29999999999999999"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                </userDefinedRuntimeAttributes>
-                                            </imageView>
                                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wSU-lN-ktR">
-                                                <rect key="frame" x="0.0" y="57.333333333333314" width="172" height="32"/>
+                                                <rect key="frame" x="23.666666666666657" y="0.0" width="86" height="32"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Be5-hL-qtx" customClass="SpringButton" customModule="Radio_One_Mallorca" customModuleProvider="target">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Be5-hL-qtx" customClass="SpringButton" customModule="M4D_Radio" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="86" height="32"/>
                                                         <color key="backgroundColor" red="0.24706900119781494" green="0.56329798698425293" blue="0.81052231788635254" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <constraints>
@@ -237,8 +209,8 @@ If you need to get in touch, you can call the studio on +34 649 77 33 53 or emai
                                                             <segue destination="XU1-sh-p0s" kind="presentation" id="2md-Am-VN1"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NDa-S4-n0n" customClass="SpringButton" customModule="Radio_One_Mallorca" customModuleProvider="target">
-                                                        <rect key="frame" x="86" y="0.0" width="86" height="32"/>
+                                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NDa-S4-n0n" customClass="SpringButton" customModule="M4D_Radio" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="86" height="32"/>
                                                         <color key="backgroundColor" red="0.20579981803894043" green="0.49201503396034241" blue="0.70883911848068237" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="32" id="TH4-oX-IOh"/>
@@ -266,12 +238,12 @@ If you need to get in touch, you can call the studio on +34 649 77 33 53 or emai
                                                 </subviews>
                                             </stackView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Open Source Project" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HWZ-je-blg">
-                                                <rect key="frame" x="19.333333333333343" y="99.333333333333314" width="133.66666666666666" height="17"/>
+                                                <rect key="frame" x="0.0" y="42" width="133.66666666666666" height="17"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hYi-2l-6dj" userLabel="Matthew Fecher &amp; Fethi El Hassasna">
-                                                <rect key="frame" x="84.333333333333343" y="126.33333333333333" width="3.6666666666666714" height="15.666666666666671"/>
+                                                <rect key="frame" x="65" y="69" width="3.6666666666666714" height="15.666666666666671"/>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -313,7 +285,7 @@ If you need to get in touch, you can call the studio on +34 649 77 33 53 or emai
         <!--Now Playing View-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" userLabel="Now Playing View" customClass="NowPlayingViewController" customModule="Radio_One_Mallorca" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" userLabel="Now Playing View" customClass="NowPlayingViewController" customModule="M4D_Radio" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -323,7 +295,7 @@ If you need to get in touch, you can call the studio on +34 649 77 33 53 or emai
                                 <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
                             </imageView>
-                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="obn-8m-awZ" userLabel="AlbumArt" customClass="SpringImageView" customModule="Radio_One_Mallorca" customModuleProvider="target">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="obn-8m-awZ" userLabel="AlbumArt" customClass="SpringImageView" customModule="M4D_Radio" customModuleProvider="target">
                                 <rect key="frame" x="70" y="81" width="274" height="274"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="obn-8m-awZ" secondAttribute="height" multiplier="1:1" id="0o9-ZN-zY3"/>
@@ -370,7 +342,7 @@ If you need to get in touch, you can call the studio on +34 649 77 33 53 or emai
                             <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="8xJ-4F-WCE" userLabel="Labels Stack View">
                                 <rect key="frame" x="12" y="573" width="390" height="65.666666666666629"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Song Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="KC8-ZG-rx5" userLabel="Song Label" customClass="SpringLabel" customModule="Radio_One_Mallorca" customModuleProvider="target">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Song Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="KC8-ZG-rx5" userLabel="Song Label" customClass="SpringLabel" customModule="M4D_Radio" customModuleProvider="target">
                                         <rect key="frame" x="124.66666666666667" y="0.0" width="140.66666666666663" height="33.666666666666664"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -390,7 +362,7 @@ If you need to get in touch, you can call the studio on +34 649 77 33 53 or emai
                                     <constraint firstAttribute="width" constant="90" id="Qr8-LJ-AFv"/>
                                     <constraint firstAttribute="height" constant="36" id="m1i-gc-0rZ"/>
                                 </constraints>
-                                <state key="normal" image="logo">
+                                <state key="normal" image="logo1">
                                     <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
@@ -449,14 +421,6 @@ If you need to get in touch, you can call the studio on +34 649 77 33 53 or emai
                                     <constraint firstAttribute="width" constant="42" id="yR1-Zk-l1q"/>
                                 </constraints>
                             </view>
-                            <wkWebView hidden="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dqS-3Y-oEi">
-                                <rect key="frame" x="70" y="70" width="274" height="274"/>
-                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <wkWebViewConfiguration key="configuration">
-                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
-                                    <wkPreferences key="preferences"/>
-                                </wkWebViewConfiguration>
-                            </wkWebView>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="WmY-ug-Nhz" userLabel="Controls Stack View">
                                 <rect key="frame" x="99" y="452" width="216" height="45"/>
                                 <subviews>
@@ -525,11 +489,9 @@ If you need to get in touch, you can call the studio on +34 649 77 33 53 or emai
                             <constraint firstItem="Ub6-am-LP5" firstAttribute="centerY" secondItem="GIj-4c-kRh" secondAttribute="centerY" id="2Ym-J6-vxU"/>
                             <constraint firstItem="obn-8m-awZ" firstAttribute="leading" secondItem="RA9-OX-Xr1" secondAttribute="leading" id="4LO-kb-G6v"/>
                             <constraint firstItem="RA9-OX-Xr1" firstAttribute="top" secondItem="obn-8m-awZ" secondAttribute="bottom" constant="-32" id="5fc-ws-2hz"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="dqS-3Y-oEi" secondAttribute="trailing" constant="50" id="6jN-F8-vA8"/>
                             <constraint firstItem="WmY-ug-Nhz" firstAttribute="top" secondItem="obn-8m-awZ" secondAttribute="bottom" constant="97" id="77z-hi-QGE"/>
                             <constraint firstItem="obn-8m-awZ" firstAttribute="top" secondItem="aXI-gd-81R" secondAttribute="top" constant="37" id="9m0-ca-E91"/>
                             <constraint firstItem="obn-8m-awZ" firstAttribute="leading" secondItem="aXI-gd-81R" secondAttribute="leading" constant="70" id="Ad0-X2-0Fe"/>
-                            <constraint firstItem="dqS-3Y-oEi" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="topMargin" constant="37" id="D5J-x3-18b" userLabel="Web View.top = topMargin + 20"/>
                             <constraint firstItem="GIj-4c-kRh" firstAttribute="leading" secondItem="aXI-gd-81R" secondAttribute="leading" constant="12" id="Hts-LO-0mm"/>
                             <constraint firstItem="8xJ-4F-WCE" firstAttribute="top" secondItem="a3Z-1t-AAA" secondAttribute="bottom" constant="12" id="Rgp-Rr-5X1"/>
                             <constraint firstItem="djB-ds-tW4" firstAttribute="centerX" secondItem="8xJ-4F-WCE" secondAttribute="centerX" id="YUB-SR-Omd"/>
@@ -538,8 +500,6 @@ If you need to get in touch, you can call the studio on +34 649 77 33 53 or emai
                             <constraint firstItem="uXf-Wr-UiK" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="hPm-1B-yKf"/>
                             <constraint firstItem="aXI-gd-81R" firstAttribute="trailing" secondItem="Ub6-am-LP5" secondAttribute="trailing" constant="12" id="i7g-jR-lvv"/>
                             <constraint firstItem="8xJ-4F-WCE" firstAttribute="leading" secondItem="aXI-gd-81R" secondAttribute="leading" constant="12" id="iJJ-RH-r0a"/>
-                            <constraint firstItem="dqS-3Y-oEi" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="50" id="jrG-ol-HEv"/>
-                            <constraint firstAttribute="bottomMargin" secondItem="dqS-3Y-oEi" secondAttribute="bottom" constant="381" id="kFP-S3-tmJ"/>
                             <constraint firstItem="aXI-gd-81R" firstAttribute="trailing" secondItem="obn-8m-awZ" secondAttribute="trailing" constant="70" id="mbe-x3-NBX"/>
                             <constraint firstItem="aXI-gd-81R" firstAttribute="trailing" secondItem="a3Z-1t-AAA" secondAttribute="trailing" constant="12" id="p9p-mf-M9S"/>
                             <constraint firstItem="a3Z-1t-AAA" firstAttribute="leading" secondItem="aXI-gd-81R" secondAttribute="leading" constant="12" id="sHe-lq-M9M"/>
@@ -565,7 +525,6 @@ If you need to get in touch, you can call the studio on +34 649 77 33 53 or emai
                         <outlet property="songLabel" destination="KC8-ZG-rx5" id="tNh-3K-qWW"/>
                         <outlet property="stationDescLabel" destination="RA9-OX-Xr1" id="uAM-NB-RRM"/>
                         <outlet property="volumeParentView" destination="zuj-rb-EKQ" id="KFg-Rk-y3Q"/>
-                        <outlet property="webView" destination="dqS-3Y-oEi" id="Bzg-Fg-Vcf"/>
                         <segue destination="bg5-7y-kdG" kind="show" identifier="InfoDetail" id="6y5-wi-W3s"/>
                     </connections>
                 </viewController>
@@ -602,12 +561,12 @@ If you need to get in touch, you can call the studio on +34 649 77 33 53 or emai
         <!--Info View Controller-->
         <scene sceneID="abW-KU-RWK">
             <objects>
-                <viewController id="bg5-7y-kdG" userLabel="Info View Controller" customClass="InfoDetailViewController" customModule="Radio_One_Mallorca" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="bg5-7y-kdG" userLabel="Info View Controller" customClass="InfoDetailViewController" customModule="M4D_Radio" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="s9T-KA-lNI">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="fdb-DQ-3fT" userLabel="Background Image View">
+                            <imageView userInteractionEnabled="NO" contentMode="bottom" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo1" translatesAutoresizingMaskIntoConstraints="NO" id="fdb-DQ-3fT" userLabel="Background Image View" customClass="image">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="s0F-Po-Xgl" userLabel="Header Stack View">
@@ -699,18 +658,19 @@ If you need to get in touch, you can call the studio on +34 649 77 33 53 or emai
         <!--About View Controller-->
         <scene sceneID="kq6-OO-kxI">
             <objects>
-                <viewController id="XU1-sh-p0s" customClass="AboutViewController" customModule="Radio_One_Mallorca" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="XU1-sh-p0s" customClass="AboutViewController" customModule="M4D_Radio" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gkA-NG-Bu8">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="FDJ-eG-GLD" userLabel="Background Image View">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="FDJ-eG-GLD" userLabel="Background Image View">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="IL8-0k-WGh">
                                 <rect key="frame" x="16" y="20" width="382" height="80"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="Paf-Ad-5GK">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo1" translatesAutoresizingMaskIntoConstraints="NO" id="Paf-Ad-5GK">
                                         <rect key="frame" x="0.0" y="0.0" width="120" height="80"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="80" id="4gy-h5-Ai4"/>
@@ -720,7 +680,7 @@ If you need to get in touch, you can call the studio on +34 649 77 33 53 or emai
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="hNo-vW-roe">
                                         <rect key="frame" x="128" y="14.666666666666664" width="254" height="50.999999999999993"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Radio One Mallorca" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vTb-3H-cug">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="M4D Radio" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vTb-3H-cug">
                                                 <rect key="frame" x="0.0" y="0.0" width="254" height="25"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="25" id="Jjn-aw-6Ea"/>
@@ -749,38 +709,27 @@ If you need to get in touch, you can call the studio on +34 649 77 33 53 or emai
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="I91-Um-X6I" userLabel="Buttons Stack View">
-                                <rect key="frame" x="16" y="585" width="382" height="111"/>
+                                <rect key="frame" x="16" y="652" width="382" height="44"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="Yo0-Y9-DbN" userLabel="Contact Stack View">
-                                        <rect key="frame" x="0.0" y="0.0" width="382" height="67"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="382" height="0.0"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SBf-Hj-mZ8">
-                                                <rect key="frame" x="102" y="0.0" width="178" height="33"/>
+                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SBf-Hj-mZ8">
+                                                <rect key="frame" x="0.0" y="0.0" width="117" height="0.0"/>
                                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                                 <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <state key="normal" title="radioonemallorca.com">
+                                                <state key="normal" title="m4dradio.com">
                                                     <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="websiteButtonDidTouch:" destination="XU1-sh-p0s" eventType="touchUpInside" id="nwb-md-4Wf"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1G4-to-fqL">
-                                                <rect key="frame" x="162.66666666666666" y="37" width="57" height="30"/>
-                                                <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
-                                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <state key="normal" title="email us">
-                                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                </state>
-                                                <connections>
-                                                    <action selector="emailButtonDidTouch:" destination="XU1-sh-p0s" eventType="touchUpInside" id="6Sq-De-gZu"/>
-                                                </connections>
-                                            </button>
                                         </subviews>
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qFQ-Uk-iUq">
-                                        <rect key="frame" x="0.0" y="75" width="382" height="36"/>
+                                        <rect key="frame" x="0.0" y="8" width="382" height="36"/>
                                         <color key="backgroundColor" red="0.20187027752399445" green="0.2016473114490509" blue="0.20853230357170105" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="36" id="EYd-7e-NvX"/>
@@ -796,23 +745,6 @@ If you need to get in touch, you can call the studio on +34 649 77 33 53 or emai
                                     </button>
                                 </subviews>
                             </stackView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" id="Hz9-EV-Vdr">
-                                <rect key="frame" x="0.0" y="149" width="414" height="439"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <string key="text"> 
-Welcome to Radio One Mallorca.
-
-
-Mallorca's hottest radio station broadcasting 24 hours a day with the latest hits, all of the classics and live programs.
-
-
-If you need to get in touch, you can call the studio on +34 649 77 33 53 or email tony@radioonemallorca.com</string>
-                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                <dataDetectorType key="dataDetectorTypes" phoneNumber="YES"/>
-                            </textView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -845,7 +777,6 @@ If you need to get in touch, you can call the studio on +34 649 77 33 53 or emai
     </inferredMetricsTieBreakers>
     <resources>
         <image name="NowPlayingBars" width="19.666666030883789" height="19"/>
-        <image name="background" width="320" height="568"/>
         <image name="btn-close" width="22.666666030883789" height="22.666666030883789"/>
         <image name="btn-next" width="44" height="44"/>
         <image name="btn-pause" width="44" height="44"/>
@@ -853,10 +784,9 @@ If you need to get in touch, you can call the studio on +34 649 77 33 53 or emai
         <image name="btn-previous" width="44" height="44"/>
         <image name="btn-stop" width="44" height="44"/>
         <image name="icon-hamburger" width="22" height="16"/>
-        <image name="logo" width="60" height="23.666666030883789"/>
+        <image name="logo1" width="341.33334350585938" height="341.33334350585938"/>
         <image name="share" width="32" height="32"/>
         <image name="stationImage" width="120" height="75"/>
-        <image name="swift-radio-black" width="120" height="47.333332061767578"/>
         <image name="vol-max" width="16.666666030883789" height="14"/>
         <image name="vol-min" width="11" height="12.666666984558105"/>
     </resources>
