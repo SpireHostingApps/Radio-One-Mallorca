@@ -2,11 +2,39 @@
     "station":
     [
      {
-     "name": "Radio One Mallorca",
-     "streamURL": "http://80.32.132.126:8000",
-     "imageURL": "http://r1m.devmysite.uk/wp-content/uploads/2020/01/Radio1-logo_White.png",
-     "desc": "93.8 and 102FM",
-     "longDesc": "Radio One Mallorca 93.8 & 102FM."
+     "name": "40s",
+     "streamURL": "https://s2.radio.co/sf0e4f0fe8/listen.m3u",
+     "imageURL": "https://m4dradio.com/wp-content/uploads/2020/05/cropped-m4d2020_logo.gif",
+     "desc": "40s Radio",
+     "longDesc": "M4D Radio: 40s Radio"
+     },
+     {
+     "name": "50s",
+     "streamURL": "https://streaming.radio.co/s188ef6afc/listen.m3u",
+     "imageURL": "https://m4dradio.com/wp-content/uploads/2020/05/cropped-m4d2020_logo.gif",
+     "desc": "50s Radio",
+     "longDesc": "M4D Radio: 50s Radio"
+     },
+     {
+     "name": "60s",
+     "streamURL": "https://streaming.radio.co/sba397e5cb/listen.m3u",
+     "imageURL": "https://m4dradio.com/wp-content/uploads/2020/05/cropped-m4d2020_logo.gif",
+     "desc": "60s Radio",
+     "longDesc": "M4D Radio: 60s Radio"
+     },
+     {
+     "name": "70s",
+     "streamURL": "https://streamer.radio.co/sa37ec8d4a/listen.m3u",
+     "imageURL": "https://m4dradio.com/wp-content/uploads/2020/05/cropped-m4d2020_logo.gif",
+     "desc": "70s Radio",
+     "longDesc": "M4D Radio: 70s Radio"
+     },
+     {
+     "name": "Mix",
+     "streamURL": "https://s2.radio.co/s07cd038f1/listen.m3u",
+     "imageURL": "https://m4dradio.com/wp-content/uploads/2020/05/cropped-m4d2020_logo.gif",
+     "desc": "Mix Radio",
+     "longDesc": "M4D Radio: Mix Radio"
      }
     ]
 }
