@@ -33,6 +33,7 @@ class StationTableViewCell: UITableViewCell {
         // Configure the cell...
         stationNameLabel.text = station.name
         stationDescLabel.text = station.desc
+        contentView.backgroundColor = UIColor(hex: station.stationColour)
         
         let imageURL = station.imageURL as NSString
         if imageURL.contains("http"), let url = URL(string: station.imageURL) {

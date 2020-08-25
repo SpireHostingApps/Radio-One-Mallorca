@@ -6,35 +6,45 @@
      "streamURL": "https://s2.radio.co/sf0e4f0fe8/listen.m3u",
      "imageURL": "https://m4dradio.com/wp-content/uploads/2020/05/cropped-m4d2020_logo.gif",
      "desc": "40s Radio",
-     "longDesc": "M4D Radio: 40s Radio"
+     "longDesc": "M4D Radio: 40s Radio",
+     "recentUrl": "https://m4dradio.com/app/40s.php",
+     "stationColour": "#f7be68"
      },
      {
      "name": "50s",
      "streamURL": "https://streaming.radio.co/s188ef6afc/listen.m3u",
      "imageURL": "https://m4dradio.com/wp-content/uploads/2020/05/cropped-m4d2020_logo.gif",
      "desc": "50s Radio",
-     "longDesc": "M4D Radio: 50s Radio"
+     "longDesc": "M4D Radio: 50s Radio",
+     "recentUrl": "https://m4dradio.com/app/50s.php",
+     "stationColour": "#0088cc"
      },
      {
      "name": "60s",
      "streamURL": "https://streaming.radio.co/sba397e5cb/listen.m3u",
      "imageURL": "https://m4dradio.com/wp-content/uploads/2020/05/cropped-m4d2020_logo.gif",
      "desc": "60s Radio",
-     "longDesc": "M4D Radio: 60s Radio"
+     "longDesc": "M4D Radio: 60s Radio",
+     "recentUrl": "https://m4dradio.com/app/60s.php",
+     "stationColour": "#6ab165"
      },
      {
      "name": "70s",
      "streamURL": "https://streamer.radio.co/sa37ec8d4a/listen.m3u",
      "imageURL": "https://m4dradio.com/wp-content/uploads/2020/05/cropped-m4d2020_logo.gif",
      "desc": "70s Radio",
-     "longDesc": "M4D Radio: 70s Radio"
+     "longDesc": "M4D Radio: 70s Radio",
+     "recentUrl": "https://m4dradio.com/app/70s.php",
+     "stationColour": "#b97ebb"
      },
      {
      "name": "Mix",
      "streamURL": "https://s2.radio.co/s07cd038f1/listen.m3u",
      "imageURL": "https://m4dradio.com/wp-content/uploads/2020/05/cropped-m4d2020_logo.gif",
      "desc": "Mix Radio",
-     "longDesc": "M4D Radio: Mix Radio"
+     "longDesc": "M4D Radio: Mix Radio",
+     "recentUrl": "https://m4dradio.com/app/mix.php",
+     "stationColour": "#000000"
      }
     ]
 }
