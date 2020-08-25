@@ -16,12 +16,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="g23-m5-5pm">
+                            <imageView userInteractionEnabled="NO" contentMode="bottomLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="radioback" translatesAutoresizingMaskIntoConstraints="NO" id="g23-m5-5pm">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                                 <color key="backgroundColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                             </imageView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="dhg-xW-Q3M">
-                                <rect key="frame" x="0.0" y="44" width="414" height="650"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="539"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="StationCell" rowHeight="90" id="hMr-La-1Ga" customClass="StationTableViewCell" customModule="M4D_Radio" customModuleProvider="target">
@@ -158,7 +158,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="GpH-v2-Q95" userLabel="Background Image View">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="radioback" translatesAutoresizingMaskIntoConstraints="NO" id="GpH-v2-Q95" userLabel="Background Image View">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
                                 <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -210,32 +210,6 @@
                                                             <segue destination="XU1-sh-p0s" kind="presentation" id="2md-Am-VN1"/>
                                                         </connections>
                                                     </button>
-                                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NDa-S4-n0n" customClass="SpringButton" customModule="M4D_Radio" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="0.0" width="86" height="32"/>
-                                                        <color key="backgroundColor" red="0.20579981803894043" green="0.49201503396034241" blue="0.70883911848068237" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="height" constant="32" id="TH4-oX-IOh"/>
-                                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="86" id="lC5-vy-gFK"/>
-                                                        </constraints>
-                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
-                                                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        <state key="normal" title="Website">
-                                                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        </state>
-                                                        <userDefinedRuntimeAttributes>
-                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="YES"/>
-                                                            <userDefinedRuntimeAttribute type="string" keyPath="animation" value="slideLeft"/>
-                                                            <userDefinedRuntimeAttribute type="number" keyPath="delay">
-                                                                <real key="value" value="0.59999999999999998"/>
-                                                            </userDefinedRuntimeAttribute>
-                                                            <userDefinedRuntimeAttribute type="number" keyPath="damping">
-                                                                <real key="value" value="1"/>
-                                                            </userDefinedRuntimeAttribute>
-                                                        </userDefinedRuntimeAttributes>
-                                                        <connections>
-                                                            <action selector="websiteButtonPressed:" destination="61j-j7-6ve" eventType="touchUpInside" id="0oo-aK-VC7"/>
-                                                        </connections>
-                                                    </button>
                                                 </subviews>
                                             </stackView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Open Source Project" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HWZ-je-blg">
@@ -251,6 +225,10 @@
                                             </label>
                                         </subviews>
                                     </stackView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="m4d" translatesAutoresizingMaskIntoConstraints="NO" id="iGQ-qk-VfR">
+                                        <rect key="frame" x="50" y="14" width="151" height="85"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -281,7 +259,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zrd-1T-mPM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="448.80000000000001" y="1293.1034482758621"/>
+            <point key="canvasLocation" x="447.82608695652175" y="1292.9347826086957"/>
         </scene>
         <!--Now Playing View-->
         <scene sceneID="ufC-wZ-h7g">
@@ -348,12 +326,12 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GIj-4c-kRh" userLabel="Company-Button">
-                                <rect key="frame" x="12" y="697" width="57" height="31"/>
+                                <rect key="frame" x="12" y="671" width="76" height="57"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="90" id="Qr8-LJ-AFv"/>
-                                    <constraint firstAttribute="height" constant="36" id="m1i-gc-0rZ"/>
+                                    <constraint firstAttribute="height" constant="50" id="m1i-gc-0rZ"/>
                                 </constraints>
-                                <state key="normal" image="logo1">
+                                <state key="normal" image="m4d">
                                     <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
@@ -370,7 +348,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" alignment="bottom" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Ub6-am-LP5">
-                                <rect key="frame" x="376" y="697" width="26" height="26"/>
+                                <rect key="frame" x="376" y="690" width="26" height="26"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3BY-Uw-fd7" userLabel="Share Button">
                                         <rect key="frame" x="0.0" y="0.0" width="26" height="26"/>
@@ -405,7 +383,7 @@
                                 </subviews>
                             </stackView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="djB-ds-tW4" userLabel="AirPlay View" customClass="AirPlayUIView">
-                                <rect key="frame" x="186" y="688" width="42" height="45"/>
+                                <rect key="frame" x="186" y="681" width="42" height="45"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="fg4-Nd-K1s"/>
@@ -485,6 +463,9 @@
                                     <wkPreferences key="preferences"/>
                                 </wkWebViewConfiguration>
                             </wkWebView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="olG-bb-a17">
+                                <rect key="frame" x="87" y="198" width="240" height="219"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -496,11 +477,13 @@
                             <constraint firstItem="9Nb-aa-iir" firstAttribute="leading" secondItem="aXI-gd-81R" secondAttribute="leading" constant="70" id="CIJ-fM-86v"/>
                             <constraint firstItem="GIj-4c-kRh" firstAttribute="leading" secondItem="aXI-gd-81R" secondAttribute="leading" constant="12" id="Hts-LO-0mm"/>
                             <constraint firstItem="9Nb-aa-iir" firstAttribute="top" secondItem="aXI-gd-81R" secondAttribute="top" constant="37" id="M5K-l5-EDb"/>
+                            <constraint firstItem="aXI-gd-81R" firstAttribute="trailing" secondItem="olG-bb-a17" secondAttribute="trailing" constant="87" id="Pf1-HJ-yVk"/>
                             <constraint firstItem="8xJ-4F-WCE" firstAttribute="top" secondItem="a3Z-1t-AAA" secondAttribute="bottom" constant="12" id="Rgp-Rr-5X1"/>
                             <constraint firstItem="djB-ds-tW4" firstAttribute="centerX" secondItem="8xJ-4F-WCE" secondAttribute="centerX" id="YUB-SR-Omd"/>
                             <constraint firstItem="aXI-gd-81R" firstAttribute="trailing" secondItem="9Nb-aa-iir" secondAttribute="trailing" constant="70" id="YcD-CA-3uL"/>
                             <constraint firstItem="aXI-gd-81R" firstAttribute="trailing" secondItem="8xJ-4F-WCE" secondAttribute="trailing" constant="12" id="a0R-gd-CTo"/>
                             <constraint firstItem="a3Z-1t-AAA" firstAttribute="top" secondItem="WmY-ug-Nhz" secondAttribute="bottom" constant="12" id="epF-5G-BUS"/>
+                            <constraint firstItem="olG-bb-a17" firstAttribute="top" secondItem="aXI-gd-81R" secondAttribute="top" constant="245" id="fnT-Lo-lhF"/>
                             <constraint firstItem="aXI-gd-81R" firstAttribute="trailing" secondItem="Ub6-am-LP5" secondAttribute="trailing" constant="12" id="i7g-jR-lvv"/>
                             <constraint firstItem="8xJ-4F-WCE" firstAttribute="leading" secondItem="aXI-gd-81R" secondAttribute="leading" constant="12" id="iJJ-RH-r0a"/>
                             <constraint firstItem="aXI-gd-81R" firstAttribute="trailing" secondItem="a3Z-1t-AAA" secondAttribute="trailing" constant="12" id="p9p-mf-M9S"/>
@@ -508,6 +491,7 @@
                             <constraint firstItem="9Nb-aa-iir" firstAttribute="trailing" secondItem="RA9-OX-Xr1" secondAttribute="trailing" id="uX9-xo-4bC"/>
                             <constraint firstItem="aXI-gd-81R" firstAttribute="bottom" secondItem="GIj-4c-kRh" secondAttribute="bottom" constant="8" id="ugE-R5-bnr"/>
                             <constraint firstItem="WmY-ug-Nhz" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="xjT-ZW-MWx"/>
+                            <constraint firstItem="olG-bb-a17" firstAttribute="leading" secondItem="aXI-gd-81R" secondAttribute="leading" constant="87" id="yQ7-gb-x9N"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="aXI-gd-81R"/>
                     </view>
@@ -515,6 +499,7 @@
                     <nil key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="airPlayView" destination="djB-ds-tW4" id="JAG-TE-Fcg"/>
+                        <outlet property="albumImageView" destination="olG-bb-a17" id="Z30-45-OMp"/>
                         <outlet property="artistLabel" destination="v3l-q6-g0h" id="s0B-6Y-MWu"/>
                         <outlet property="nextButton" destination="rdn-tm-QKv" id="VHQ-xc-bpl"/>
                         <outlet property="playingButton" destination="k7t-tN-2wp" id="ZOi-KR-veF"/>
@@ -661,14 +646,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="FDJ-eG-GLD" userLabel="Background Image View">
+                            <imageView userInteractionEnabled="NO" alpha="0.5" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="radioback" translatesAutoresizingMaskIntoConstraints="NO" id="FDJ-eG-GLD" userLabel="Background Image View">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
-                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="IL8-0k-WGh">
                                 <rect key="frame" x="16" y="20" width="382" height="80"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo1" translatesAutoresizingMaskIntoConstraints="NO" id="Paf-Ad-5GK">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="m4d" translatesAutoresizingMaskIntoConstraints="NO" id="Paf-Ad-5GK">
                                         <rect key="frame" x="0.0" y="0.0" width="120" height="80"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="80" id="4gy-h5-Ai4"/>
@@ -783,6 +767,8 @@
         <image name="btn-stop" width="44" height="44"/>
         <image name="icon-hamburger" width="22" height="16"/>
         <image name="logo1" width="341.33334350585938" height="341.33334350585938"/>
+        <image name="m4d" width="682.66668701171875" height="482.66665649414062"/>
+        <image name="radioback" width="640" height="427"/>
         <image name="share" width="32" height="32"/>
         <image name="stationImage" width="120" height="75"/>
         <image name="vol-max" width="16.666666030883789" height="14"/>

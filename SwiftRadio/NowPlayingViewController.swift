@@ -44,6 +44,7 @@ class NowPlayingViewController: UIViewController, WKUIDelegate {
     @IBOutlet weak var nextButton: UIButton!
     @IBOutlet weak var airPlayView: UIView!
     
+    
     // MARK: - Properties
   
     var currentStation: RadioStation!
@@ -60,6 +61,7 @@ class NowPlayingViewController: UIViewController, WKUIDelegate {
         super.viewDidLoad()
         
         self.view.backgroundColor = UIColor(hex: currentStation.stationColour)
+        self.navigationController!.navigationBar.barTintColor = UIColor(hex: currentStation.stationColour)
         upcomingWebView.backgroundColor = UIColor(hex: currentStation.stationColour)
         
         // Create Now Playing BarItem
@@ -72,7 +74,7 @@ class NowPlayingViewController: UIViewController, WKUIDelegate {
         self.title = currentStation.name
         
         // Set UI
-//        albumImageView.image = currentTrack.artworkImage
+        albumImageView.image = currentTrack.artworkImage
         stationDescLabel.text = currentStation.desc
         stationDescLabel.isHidden = currentTrack.artworkLoaded
         
@@ -138,7 +140,7 @@ class NowPlayingViewController: UIViewController, WKUIDelegate {
     
     func stationDidChange() {
         radioPlayer.radioURL = URL(string: currentStation.streamURL)
-//        albumImageView.image = currentTrack.artworkImage
+        albumImageView.image = currentTrack.artworkImage
         stationDescLabel.text = currentStation.desc
         stationDescLabel.isHidden = currentTrack.artworkLoaded
         title = currentStation.name

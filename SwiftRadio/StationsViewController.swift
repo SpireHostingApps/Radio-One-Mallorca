@@ -139,7 +139,7 @@ class StationsViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         let screenTitle = "m4d Radio"
-        let screenSubtitle = "Subtitle text"
+        let screenSubtitle = "Where memories are made again and again"
         self.navigationItem.titleView = UIView.setNavBarTitleWith(title: screenTitle, subtitle: screenSubtitle)
     }
 
