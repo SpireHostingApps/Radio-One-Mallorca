@@ -55,7 +55,9 @@ class StationsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.navigationController?.navigationBar.barTintColor = .white
+        self.navigationController?.navigationBar.titleTextAttributes =
+        [NSAttributedString.Key.foregroundColor: UIColor.black]
         if UserDefaults.standard.bool(forKey: "Name") {
             print("already shown")
             // Terms have been accepted, proceed as normal
@@ -135,7 +137,7 @@ class StationsViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        title = "M4D Radio"
+        title = "m4d Radio"
     }
 
     //*****************************************************************
@@ -143,9 +145,9 @@ class StationsViewController: UIViewController {
     //*****************************************************************
     
     func setupPullToRefresh() {
-        refreshControl.attributedTitle = NSAttributedString(string: "Pull to refresh", attributes: [.foregroundColor: UIColor.white])
-        refreshControl.backgroundColor = .black
-        refreshControl.tintColor = .white
+        refreshControl.attributedTitle = NSAttributedString(string: "Pull to refresh", attributes: [.foregroundColor: UIColor.black])
+        refreshControl.backgroundColor = .white
+        refreshControl.tintColor = .black
         refreshControl.addTarget(self, action: #selector(refresh), for: .valueChanged)
         tableView.addSubview(refreshControl)
     }
