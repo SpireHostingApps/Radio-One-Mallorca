@@ -34,6 +34,7 @@ class NowPlayingViewController: UIViewController, WKUIDelegate {
     @IBOutlet weak var webView: WKWebView!
     @IBOutlet weak var albumHeightConstraint: NSLayoutConstraint!
     @IBOutlet weak var albumImageView: SpringImageView!
+    @IBOutlet weak var upcomingWebView: WKWebView!
     @IBOutlet weak var artistLabel: UILabel!
     @IBOutlet weak var playingButton: UIButton!
     @IBOutlet weak var songLabel: SpringLabel!
@@ -62,15 +63,17 @@ class NowPlayingViewController: UIViewController, WKUIDelegate {
         createNowPlayingAnimation()
         
         // Set AlbumArtwork Constraints
-        optimizeForDeviceSize()
+        // optimizeForDeviceSize()
 
         // Set View Title
         self.title = currentStation.name
         
         // Set UI
-        albumImageView.image = currentTrack.artworkImage
+//        albumImageView.image = currentTrack.artworkImage
         stationDescLabel.text = currentStation.desc
         stationDescLabel.isHidden = currentTrack.artworkLoaded
+        
+        setupUpcomingWebView()
         
         // Check for station change
         newStation ? stationDidChange() : playerStateDidChange(radioPlayer.state, animate: false)
@@ -132,10 +135,17 @@ class NowPlayingViewController: UIViewController, WKUIDelegate {
     
     func stationDidChange() {
         radioPlayer.radioURL = URL(string: currentStation.streamURL)
-        albumImageView.image = currentTrack.artworkImage
+//        albumImageView.image = currentTrack.artworkImage
         stationDescLabel.text = currentStation.desc
         stationDescLabel.isHidden = currentTrack.artworkLoaded
         title = currentStation.name
+    }
+    
+    func setupUpcomingWebView() {
+        
+        let link = URL(string:currentStation.recentUrl)!
+        let request = URLRequest(url: link)
+        upcomingWebView.load(request)
     }
     
     //*****************************************************************

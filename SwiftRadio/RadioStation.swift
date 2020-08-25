@@ -19,19 +19,23 @@ struct RadioStation: Codable {
     var imageURL: String
     var desc: String
     var longDesc: String
+    var stationColour: String
+    var recentUrl: String
     
-    init(name: String, streamURL: String, imageURL: String, desc: String, longDesc: String = "") {
+    init(name: String, streamURL: String, imageURL: String, desc: String, longDesc: String = "", stationColour: String = "", recentUrl: String = "") {
         self.name = name
         self.streamURL = streamURL
         self.imageURL = imageURL
         self.desc = desc
         self.longDesc = longDesc
+        self.stationColour = stationColour
+        self.recentUrl = recentUrl
     }
 }
 
 extension RadioStation: Equatable {
     
     static func == (lhs: RadioStation, rhs: RadioStation) -> Bool {
-        return (lhs.name == rhs.name) && (lhs.streamURL == rhs.streamURL) && (lhs.imageURL == rhs.imageURL) && (lhs.desc == rhs.desc) && (lhs.longDesc == rhs.longDesc)
+        return (lhs.name == rhs.name) && (lhs.streamURL == rhs.streamURL) && (lhs.imageURL == rhs.imageURL) && (lhs.desc == rhs.desc) && (lhs.longDesc == rhs.longDesc) && (lhs.stationColour == rhs.stationColour) && (lhs.recentUrl == rhs.recentUrl)
     }
 }
