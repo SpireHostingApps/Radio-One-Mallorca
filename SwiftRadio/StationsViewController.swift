@@ -58,6 +58,7 @@ class StationsViewController: UIViewController {
         self.navigationController?.navigationBar.barTintColor = .white
         self.navigationController?.navigationBar.titleTextAttributes =
         [NSAttributedString.Key.foregroundColor: UIColor.black]
+        
         if UserDefaults.standard.bool(forKey: "Name") {
             print("already shown")
             // Terms have been accepted, proceed as normal
@@ -137,7 +138,9 @@ class StationsViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        title = "m4d Radio"
+        let screenTitle = "m4d Radio"
+        let screenSubtitle = "Subtitle text"
+        self.navigationItem.titleView = UIView.setNavBarTitleWith(title: screenTitle, subtitle: screenSubtitle)
     }
 
     //*****************************************************************

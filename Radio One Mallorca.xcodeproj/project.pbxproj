@@ -63,6 +63,7 @@
 		94D260981B45E8B800DE671C /* Track.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D260971B45E8B800DE671C /* Track.swift */; };
 		94D30EA71AD07A880024FE96 /* StationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D30EA61AD07A880024FE96 /* StationTableViewCell.swift */; };
 		94E9761C1B1A8F3200F52B1E /* UIImage+DropShadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E9761B1B1A8F3200F52B1E /* UIImage+DropShadow.swift */; };
+		95FCBEC124F55BB90086B033 /* UIView+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95FCBEC024F55BB90086B033 /* UIView+Helper.swift */; };
 		CAA8FDB52000614600050F77 /* RadioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA8FDB42000614600050F77 /* RadioPlayer.swift */; };
 		CF72ACE721F7155200461EED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF72ACE621F714D000461EED /* Main.storyboard */; };
 		D7E7CCB950D0964008BF9056 /* Pods_SwiftRadio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4A092B90F0D0E01EE3B7FE9 /* Pods_SwiftRadio.framework */; };
@@ -167,6 +168,7 @@
 		94D260971B45E8B800DE671C /* Track.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Track.swift; sourceTree = "<group>"; };
 		94D30EA61AD07A880024FE96 /* StationTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StationTableViewCell.swift; sourceTree = "<group>"; };
 		94E9761B1B1A8F3200F52B1E /* UIImage+DropShadow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+DropShadow.swift"; sourceTree = "<group>"; };
+		95FCBEC024F55BB90086B033 /* UIView+Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Helper.swift"; sourceTree = "<group>"; };
 		C4A092B90F0D0E01EE3B7FE9 /* Pods_SwiftRadio.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftRadio.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C99BD188C4D01655BAAD17B9 /* Pods-SwiftRadio.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftRadio.debug.xcconfig"; path = "Target Support Files/Pods-SwiftRadio/Pods-SwiftRadio.debug.xcconfig"; sourceTree = "<group>"; };
 		CAA8FDB42000614600050F77 /* RadioPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioPlayer.swift; sourceTree = "<group>"; };
@@ -366,6 +368,7 @@
 				53113F38230C720900462C0E /* ShareImageGenerator.swift */,
 				6258DCD722D93A3500166C65 /* LogoShareView.swift */,
 				6258DCD922D93A5400166C65 /* LogoShareView.xib */,
+				95FCBEC024F55BB90086B033 /* UIView+Helper.swift */,
 			);
 			name = "UI Helpers";
 			sourceTree = "<group>";
@@ -679,6 +682,7 @@
 				5F22BA4F1F72AD5A00CB5911 /* TransitionManager.swift in Sources */,
 				5F22BA531F72AD5A00CB5911 /* SpringAnimation.swift in Sources */,
 				94452E4F1AD6F24700BFE7A5 /* PopUpMenuViewController.swift in Sources */,
+				95FCBEC124F55BB90086B033 /* UIView+Helper.swift in Sources */,
 				5F22BA431F72AD5A00CB5911 /* SpringTextView.swift in Sources */,
 				9409E11C1ABF6FEA00312E2B /* AppDelegate.swift in Sources */,
 				5F22BA4D1F72AD5A00CB5911 /* DesignableImageView.swift in Sources */,
