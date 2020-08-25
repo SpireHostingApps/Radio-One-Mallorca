@@ -59,6 +59,9 @@ class NowPlayingViewController: UIViewController, WKUIDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.view.backgroundColor = UIColor(hex: currentStation.stationColour)
+        upcomingWebView.backgroundColor = UIColor(hex: currentStation.stationColour)
+        
         // Create Now Playing BarItem
         createNowPlayingAnimation()
         

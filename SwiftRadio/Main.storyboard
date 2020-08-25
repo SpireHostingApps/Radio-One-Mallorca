@@ -290,11 +290,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uXf-Wr-UiK" userLabel="Background Image View">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
-                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
-                            </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="a3Z-1t-AAA" userLabel="Volume Stack View">
                                 <rect key="frame" x="12" y="505" width="390" height="60"/>
                                 <subviews>
@@ -503,16 +498,12 @@
                             <constraint firstItem="aXI-gd-81R" firstAttribute="trailing" secondItem="9Nb-aa-iir" secondAttribute="trailing" constant="70" id="YcD-CA-3uL"/>
                             <constraint firstItem="aXI-gd-81R" firstAttribute="trailing" secondItem="8xJ-4F-WCE" secondAttribute="trailing" constant="12" id="a0R-gd-CTo"/>
                             <constraint firstItem="a3Z-1t-AAA" firstAttribute="top" secondItem="WmY-ug-Nhz" secondAttribute="bottom" constant="12" id="epF-5G-BUS"/>
-                            <constraint firstItem="uXf-Wr-UiK" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="hPm-1B-yKf"/>
                             <constraint firstItem="aXI-gd-81R" firstAttribute="trailing" secondItem="Ub6-am-LP5" secondAttribute="trailing" constant="12" id="i7g-jR-lvv"/>
                             <constraint firstItem="8xJ-4F-WCE" firstAttribute="leading" secondItem="aXI-gd-81R" secondAttribute="leading" constant="12" id="iJJ-RH-r0a"/>
                             <constraint firstItem="aXI-gd-81R" firstAttribute="trailing" secondItem="a3Z-1t-AAA" secondAttribute="trailing" constant="12" id="p9p-mf-M9S"/>
                             <constraint firstItem="a3Z-1t-AAA" firstAttribute="leading" secondItem="aXI-gd-81R" secondAttribute="leading" constant="12" id="sHe-lq-M9M"/>
                             <constraint firstItem="9Nb-aa-iir" firstAttribute="trailing" secondItem="RA9-OX-Xr1" secondAttribute="trailing" id="uX9-xo-4bC"/>
                             <constraint firstItem="aXI-gd-81R" firstAttribute="bottom" secondItem="GIj-4c-kRh" secondAttribute="bottom" constant="8" id="ugE-R5-bnr"/>
-                            <constraint firstItem="uXf-Wr-UiK" firstAttribute="leading" secondItem="aXI-gd-81R" secondAttribute="leading" id="ukJ-i6-3WQ"/>
-                            <constraint firstAttribute="bottom" secondItem="uXf-Wr-UiK" secondAttribute="bottom" id="vqi-Me-nfe"/>
-                            <constraint firstItem="aXI-gd-81R" firstAttribute="trailing" secondItem="uXf-Wr-UiK" secondAttribute="trailing" id="wlz-dV-IhI"/>
                             <constraint firstItem="WmY-ug-Nhz" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="xjT-ZW-MWx"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="aXI-gd-81R"/>
