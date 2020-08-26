@@ -480,7 +480,7 @@ extension StationsViewController: RadioPlayerDelegate {
     
     func trackArtworkDidUpdate(_ track: Track?) {
         updateLockScreen(with: track)
-//        nowPlayingViewController?.updateTrackArtwork(with: track)
+       nowPlayingViewController?.updateTrackArtwork(with: track)
     }
 }
 
