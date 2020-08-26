@@ -444,6 +444,7 @@ extension StationsViewController: UISearchResultsUpdating {
             let searchTextField = searchController.searchBar.value(forKey: "_searchField") as? UITextField
             searchTextField?.keyboardAppearance = .dark
         }
+       
     }
 
     func updateSearchResults(for searchController: UISearchController) {
