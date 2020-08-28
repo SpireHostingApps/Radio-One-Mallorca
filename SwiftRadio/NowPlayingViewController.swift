@@ -75,8 +75,8 @@ class NowPlayingViewController: UIViewController, WKUIDelegate {
         
         // Set UI
         albumImageView.image = currentTrack.artworkImage
-        stationDescLabel.text = currentStation.desc
-        stationDescLabel.isHidden = currentTrack.artworkLoaded
+        // stationDescLabel.text = currentStation.desc
+        // stationDescLabel.isHidden = currentTrack.artworkLoaded
         
         setupUpcomingWebView()
         
@@ -141,8 +141,8 @@ class NowPlayingViewController: UIViewController, WKUIDelegate {
     func stationDidChange() {
         radioPlayer.radioURL = URL(string: currentStation.streamURL)
         albumImageView.image = currentTrack.artworkImage
-        stationDescLabel.text = currentStation.desc
-        stationDescLabel.isHidden = currentTrack.artworkLoaded
+        // stationDescLabel.text = currentStation.desc
+        // stationDescLabel.isHidden = currentTrack.artworkLoaded
         title = currentStation.name
     }
     
@@ -211,9 +211,9 @@ class NowPlayingViewController: UIViewController, WKUIDelegate {
             albumImageView.animation = "wobble"
             albumImageView.duration = 2
             albumImageView.animate()
-            stationDescLabel.isHidden = true
+            // stationDescLabel.isHidden = true
         } else {
-            stationDescLabel.isHidden = false
+            // stationDescLabel.isHidden = false
         }
         
         // Force app to update display
