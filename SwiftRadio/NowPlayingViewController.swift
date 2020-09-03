@@ -59,11 +59,10 @@ class NowPlayingViewController: UIViewController, WKUIDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         self.view.backgroundColor = UIColor(hex: currentStation.stationColour)
         self.navigationController!.navigationBar.barTintColor = UIColor(hex: currentStation.stationColour)
         upcomingWebView.backgroundColor = UIColor(hex: currentStation.stationColour)
-        
+        delegate?.didPressStopButton()
         // Create Now Playing BarItem
         createNowPlayingAnimation()
         
@@ -92,6 +91,7 @@ class NowPlayingViewController: UIViewController, WKUIDelegate {
         // Hide / Show Next/Previous buttons
         previousButton.isHidden = hideNextPreviousButtons
         nextButton.isHidden = hideNextPreviousButtons
+        delegate?.didPressPlayingButton()
     }
     
     //*****************************************************************
